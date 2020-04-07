@@ -15,15 +15,16 @@ function DisplayMsg () {
     let favColor = prompt("What is your favorite color?");
     console.log(favColor);
 
-    if ((favColor != "blue") && (favColor !="red") && (favColor !="purple")) {
+    if (favColor === "blue" || favColor === "red" || favColor === "purple") {
         
-        let message = `${favColor} is not my favorite color, we are not compatible ${name}`;
+
+        let message = `${favColor} is a great color ${name}`;
         alert(message);
         
     }
     else
      {
-        let message = `${favColor} is a great color ${name}`;
+        let message = `${favColor} is not my favorite color, we are not compatible ${name}`;
         alert(message);
     }
 }
